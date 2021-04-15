@@ -2,12 +2,13 @@
 
 <!-- Background Investigation -->
 ## Background Investigation -- Expected patterns
+For most case we need to know as certain as possible when market volatiles and when it doesn't. Thus we pry into the VIX index that reflects fluctuations more than anyelse.  
+
+### Clustering 
+Since it's almost a stationary series, it may have specific behaviour in specific duration. Applying cluster algorithm enable us to have a better knowledge estimating how volatile the current market is, comparing to history data.
 
 <!-- Anomalies within background intervals -->
 ## Anomalies within background intervals -- Unexpected patterns
 
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+<!-- Usage -->
+## Usage
