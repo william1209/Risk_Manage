@@ -8,8 +8,8 @@ For most winning cases, having a knowledge when market volatiles or not is a mus
 * Classification -- Random Forrest
 
 <!-- Anomalies within background intervals -->
-### Anomalies within background intervals -- Unexpected patterns
-
+## Anomalies within background intervals -- Unexpected patterns
+The max amplitude of fluctuations is limited in each cluster, theoretically. As a matter of fact, it does refresh records. To say there are 2 categories of this series... up-trend and down-trend, anomalies are something between, which are unable to be classified. 
 
 <!-- Usage -->
 ### Usage
