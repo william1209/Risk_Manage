@@ -62,3 +62,4 @@ outlier_test, loss_df_test = model.predict(load=True)
 model.metrics(alert_window = 3, n_class = 3, outlier_test)
 ```
 ![alt tag](https://user-images.githubusercontent.com/38639538/115183192-e3987b80-a10d-11eb-8db5-8f73a28b6a9e.png)
+![alt tag](https://user-images.githubusercontent.com/38639538/115183177-ded3c780-a10d-11eb-88db-cf9b19a4afac.png)
