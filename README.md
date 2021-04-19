@@ -35,6 +35,7 @@ model.plot_info_criteria()
 model.fit("cluster number")
 model.plot()
 ```
+![alt tag](https://user-images.githubusercontent.com/38639538/115183163-d9767d00-a10d-11eb-97fd-968f9d2f5ba1.png)
 
 ### Anomaly Detection/Prediction
 * Hyperparameters setting
