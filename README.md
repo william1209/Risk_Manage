@@ -23,7 +23,7 @@ target = "^VIX"
 target_u = "^TWII"
 daypara = 400
 ```
-### Dive in
+### Clustering
 * Optimal number of clusters 
 ```sh
 model = cluster_model(target, daypara)
@@ -33,4 +33,29 @@ model.plot_info_criteria()
 ```sh
 model.fit("cluster number")
 model.plot()
+```
+
+### Anomaly Detection/Prediction
+* Hyperparameters setting
+```sh
+LOOKBACK_SIZE = 10
+THRESHOLD = 0.6
+BATCH_SIZE = 32
+EPOCH = 1000
+PATH = "/content/save.pth"
+```
+* Training
+```sh
+model = train(LOOKBACK_SIZE, THRESHOLD, BATCH_SIZE, EPOCH, PATH)
+outlier_train, loss_df_train = model.predict(load=False)
+```
+* Load pre-trained model
+```sh
+outlier_test, loss_df_test = model.predict(load=True)
+```
+* Metrics on test-set
+* alert_window is the sensitivity of detection, meaning predicting how many days before market volatiles
+* n_class is the number of clusters
+```sh
+model.metrics(alert_window = 3, n_class = 3, outlier_test)
 ```
