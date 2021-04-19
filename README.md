@@ -29,6 +29,7 @@ daypara = 400
 model = cluster_model(target, daypara)
 model.plot_info_criteria()
 ```
+![Screenshot](fig1.png)
 * Fit and Plot
 ```sh
 model.fit("cluster number")
