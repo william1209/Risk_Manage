@@ -1,1 +1,1 @@
-from Risk_Manage.Data_Prepare import Data_Prepare
+from risk_manage.Data_Prepare import Data_Prepare
