@@ -25,5 +25,5 @@ class Data_Prepare:
     return data
 
   def diff_data(self, window):
-    diff = self.fetch(target_u)["price"].diff()[window:]
+    diff = self.fetch(self.target_u)["price"].diff()[window:]
     return diff
