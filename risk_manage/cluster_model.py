@@ -4,10 +4,10 @@ from sklearn.mixture import GaussianMixture
 from risk_manage.model_data_parse import model_data_parse
 
 class cluster_model(model_data_parse):
-  def __init__(self, target, daypara):
-    super().__init__(target, daypara)
-    self.target = target
-    self.daypara = daypara
+  def __init__(self, target, target_u, daypara):
+    super().__init__(target, target_u, daypara)
+    #self.target = target
+    #self.daypara = daypara
     #self.df_np = np.array(self.df["price"]).reshape(-1,1)
     self.n = np.arange(1,8)
     self.model = [GaussianMixture(n, covariance_type='full', random_state=0).fit(self.df_np) for n in self.n]

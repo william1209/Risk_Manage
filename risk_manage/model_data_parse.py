@@ -1,9 +1,11 @@
 import numpy as np
 from risk_manage.Data_Prepare import Data_Prepare
 class model_data_parse(Data_Prepare):
-  def __init__(self, target, daypara):
-    self.target = target
-    self.daypara = daypara
+  def __init__(self, target, target_u, daypara):
+    super().__init__(target, target_u, daypara)
+    #self.target = target
+    #self.target_u = target_u
+    #self.daypara = daypara
     self.df = super(model_data_parse, self).fetch(target) 
     self.diff = super(model_data_parse, self).diff_data(1)
     self.df_np = np.array(self.df["price"]).reshape(-1,1)
