@@ -1,4 +1,5 @@
 import numpy as np
+from risk_manage.Data_Prepare import Data_Prepare
 class model_data_parse(Data_Prepare):
   def __init__(self, target, daypara):
     self.target = target

@@ -8,7 +8,7 @@ class Data_Prepare:
     self.target = target
     self.target_u = target_u
     self.daypara = daypara
-
+    
   def parse(func):         
     def wrap(self, target): 
       data = func(self, target)
