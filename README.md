@@ -5,7 +5,7 @@
 For most winning cases, having knowledge of the timing when market volatiles or not is a must. Thus we pry into the VIX index which reflects fluctuations the most. Applying cluster algorithm, we may have a glimpse at the silhouette of the market's true nature, but yet not enough. To solve this, classification algorithm/method yields a very good solution. Also the process is the so-called "Unsupervised Classification"
 
 * Cluster -- EM-GMM model
-* Classification -- Random Forrest
+* Classification -- Random Forrest/Decision Tree
 
 In a nutshell, find each cluster and draw a distinguishing line between each one.
 
