@@ -1,5 +1,5 @@
 import numpy as np
-import matplotlib.pyploy as plt
+import matplotlib.pyplot as plt
 from sklearn.mixture import GaussianMixture
 from risk_manage.model_data_parse import model_data_parse
 
