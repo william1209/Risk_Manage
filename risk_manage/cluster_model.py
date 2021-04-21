@@ -1,8 +1,8 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.mixture import GaussianMixture
-import matplotlib as mat
-mat.style.use('ggplot')
+import seaborn as sns
+sns.set()
 from risk_manage.model_data_parse import model_data_parse
 
 class cluster_model(model_data_parse):
