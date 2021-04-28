@@ -17,6 +17,14 @@ The max amplitude of fluctuations is limited in each cluster, theoretically. As 
 
 <!-- Usage -->
 ## Usage
+* Download from PyPI
+```sh
+pip install risk-manage=1.1.3
+```
+* Import
+```sh
+import risk_manage as rm
+```
 * Setting up targets and days to trace
 ```sh
 target = "^VIX"
@@ -26,7 +34,7 @@ daypara = 400
 ### Clustering
 * Optimal number of clusters 
 ```sh
-model = cluster_model(target, daypara)
+model = rm.cluster_model(target, daypara)
 model.plot_info_criteria()
 ```
 ![alt tag](https://user-images.githubusercontent.com/38639538/115183059-aaf8a200-a10d-11eb-9341-27b8d6977b5d.png)
@@ -36,6 +44,15 @@ model.fit("cluster number")
 model.plot()
 ```
 ![alt tag](https://user-images.githubusercontent.com/38639538/115183163-d9767d00-a10d-11eb-97fd-968f9d2f5ba1.png)
+
+### Decision Boundaries
+* Plot 
+```sh
+model2 = rm.Decision_Boundary(target, target_u, daypara, n_cluster=4)
+model2.plot(depth=100, n_estimator=100, resolution=0.05, use_tree=True)
+```
+![alt tag](https://user-images.githubusercontent.com/38639538/116360991-1390fe80-a833-11eb-81b0-afeaccd505df.png)
+
 
 ### Anomaly Detection/Prediction
 * Hyperparameters setting
