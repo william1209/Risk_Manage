@@ -22,7 +22,7 @@ class Decision_Boundary(cluster_model, model_data_parse):
         tree = DecisionTreeClassifier(criterion='entropy', max_depth=depth,random_state=3)
         forest = RandomForestClassifier(criterion="entropy", n_estimators=n_estimator, random_state=3)
         tree.fit(self.df_cluster[['price','diff']], self.df_cluster[['cluster']])
-        forest.fit(self.df_cluster[['price','diff']], self.df_cluster[['cluster']])
+        forest.fit(self.df_cluster[['price','diff']], np.array(self.df_cluster[['cluster']]).ravel())
         if use_tree:
             classifier = tree
         else: 
