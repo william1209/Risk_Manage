@@ -2,13 +2,13 @@ from distutils.core import setup
 setup(
   name = 'risk_manage',         # How you named your package folder (MyLib)
   packages = ['risk_manage'],   # Chose the same as "name"
-  version = '1.0.12',      # Start with a small number and increase it with every change you make
+  version = '1.1.0',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'test version ',   # Give a short description about your library
   author = 'Hao-Chen, Chiu',                   # Type in your name
   author_email = 'pro.imoney@gmail.com',      # Type in your E-Mail
   url = 'https://github.com/william1209/Risk_Manage.git',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/william1209/Risk_Manage/archive/refs/tags/1.0.12.tar.gz',    # I explain this later o
+  download_url = 'https://github.com/william1209/Risk_Manage/archive/refs/tags/1.1.0.tar.gz',    # I explain this later o
   keywords = ['Quants', 'ML', 'DL'],   # Keywords that define your package best
   install_requires=[            # I get to this in a second
           'pandas',
