@@ -6,7 +6,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 from risk_manage.model_data_parse import model_data_parse
-from risk_manage.Data_Prepare import cluster_model
+from risk_manage.cluster_model import cluster_model
 
 class Decision_Boundary(cluster_model, model_data_parse):
     def __init__(self, target, target_u, daypara, n_cluster):
