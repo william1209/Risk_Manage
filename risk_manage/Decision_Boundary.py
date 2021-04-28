@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-from risk_manage.Data_Prepare import model_data_parse
+from risk_manage.model_data_parse import model_data_parse
 from risk_manage.Data_Prepare import cluster_model
 
 class Decision_Boundary(cluster_model, model_data_parse):
