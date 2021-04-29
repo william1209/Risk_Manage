@@ -7,7 +7,7 @@ For most winning cases, having knowledge of the timing when market volatiles or 
 * Cluster -- EM-GMM model
 * Classification -- Random Forrest/Decision Tree
 
-In a nutshell, find each cluster and draw a distinguishing line between each one.
+**In a nutshell, find each cluster and draw a distinguishing line between each one.**
 
 <!-- Anomalies within background intervals -->
 ## Anomalies within background intervals -- Unexpected patterns
