@@ -21,7 +21,6 @@ The max amplitude of fluctuations is limited in each cluster, theoretically. As 
 ```sh
 pip install risk-manage=1.1.3
 ```
-* Import
 ```sh
 import risk_manage as rm
 ```
@@ -32,7 +31,7 @@ target_u = "^TWII"
 daypara = 400
 ```
 ### Clustering
-* Optimal number of clusters 
+* Explore optimal number of clusters 
 ```sh
 model = rm.cluster_model(target, daypara)
 model.plot_info_criteria()
@@ -53,6 +52,10 @@ model2.plot(depth=100, n_estimator=100, resolution=0.05, use_tree=True)
 ```
 ![alt tag](https://user-images.githubusercontent.com/38639538/116360991-1390fe80-a833-11eb-81b0-afeaccd505df.png)
 
+* Print detail info
+```sh
+model2.log()
+```
 
 ### Anomaly Detection/Prediction
 * Hyperparameters setting
