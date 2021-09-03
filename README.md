@@ -1,17 +1,20 @@
 # Risk Management
 
+
+## Abstraction
+One of the problems mostly encounter in designing trading strategies is not knowing when market doesn't behave as it used to. And this uncertainty turns out to be the greatest risk every trader faces. This research aims to design a procedure to detect and predict those unbehaves so as to prevent lossing and even winning.
+
+## Methology
 <!-- Background Investigation -->
-## Background Investigation -- Expected patterns
-For most winning cases, having knowledge of the timing when market volatiles or not is a must. Thus we pry into the VIX index which reflects fluctuations the most. Applying cluster algorithm, we may have a glimpse at the silhouette of the market's true nature, but yet not enough. To solve this, classification algorithm/method yields a very good solution. Also the process is the so-called "Unsupervised Classification"
+### Background Investigation -- Deterministic Model
+By conducting unsupervised classification, it's a lot easier to discriminate the degree of jeopardy about the existing position and opportunities of future dicisions. This model aims to help traders to come up with algorithmic strategies depending on different clusters.
 
 * Cluster -- EM-GMM model
 * Classification -- Random Forrest/Decision Tree
 
-**In a nutshell, find each cluster and draw a distinguishing line between each one.**
-
 <!-- Anomalies within background intervals -->
-## Anomalies within background intervals -- Unexpected patterns
-The max amplitude of fluctuations is limited in each cluster, theoretically. As a matter of fact, it does refresh records. To say there are 2 categories of this series... up-trend and down-trend, anomalies are something between, which are unable to be classified.
+### Anomalies within background intervals -- Stochastic Model
+To predict stochastic behavior, user can define certain amplitude of volatility as a treshold. Those greater than the threshold are defined as anomalies, and their yesterday are labeled for neural network to learn. For most cases, volatiling over 300 point within a day is recommended threshold. Hyperparameter and parameter setting still require domain-knowledge to optimise the performance of this model.
 
 * AD -- 1DCnn approach
 
