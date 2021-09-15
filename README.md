@@ -13,7 +13,7 @@ By conducting unsupervised classification, it's a lot easier to discriminate the
 * Classification -- Random Forrest/Decision Tree
 
 <!-- Anomalies within background intervals -->
-### Anomalies within background intervals -- Stochastic Model
+### Anomalies -- Stochastic Model
 To predict stochastic behavior, user can define certain amplitude of volatility as a treshold. Those greater than the threshold are defined as anomalies, and their yesterday are labeled for neural network to learn. For most cases, volatiling over 300 point within a day is recommended threshold. Hyperparameter and parameter setting still require domain-knowledge to optimise the performance of this model.
 
 * AD -- 1DCnn approach
