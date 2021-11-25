@@ -7,7 +7,7 @@ One of the problems mostly encounter in designing trading strategies is not know
 ## Methology
 <!-- Background Investigation -->
 ### Background Investigation -- Deterministic Model
-By conducting unsupervised classification, it's a lot easier to discriminate the degree of jeopardy about the existing position and opportunities of future dicisions. This model aims to help traders to come up with algorithmic strategies depending on different clusters.
+By conducting unsupervised classification, it's a lot easier to discriminate the degree of jeopardy about the existing position and opportunities of future dicisions. This model aims to help traders to come up with algorithmic strategies for different clusters.
 
 * Cluster -- EM-GMM model
 * Classification -- Random Forrest/Decision Tree
