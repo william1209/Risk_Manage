@@ -3,7 +3,7 @@
 
 
 ## Abstraction
-One of the problems mostly encounter in designing trading strategies is not knowing when market doesn't behave as it used to. And this uncertainty turns out to be the greatest risk every trader faces. This research aims to design a procedure to detect and predict those unbehaves so as to prevent lossing or even winning.
+One of the problems mostly encountered in designing trading strategies is not knowing when market doesn't behave as it used to. And this uncertainty turns out to be the greatest risk every trader faces. This research aims to design a procedure to detect and predict those unbehaves so as to prevent lossing or even winning.
 
 ## Methology
 <!-- Background Investigation -->
